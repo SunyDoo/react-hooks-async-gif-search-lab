@@ -1,9 +1,10 @@
-function GifSearch({updateSearchTermInState, runGifSearchResultFactory}) {
+function GifSearch({updateSearchTerm, runGifSearch}) {
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        updateSearchTermInState(event.target[0].value)
-        runGifSearchResultFactory()
+        console.log(event.target)
+        updateSearchTerm(event.target[0].value)
+        runGifSearch()
     }
 
     return(

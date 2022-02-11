@@ -26,7 +26,7 @@ function GifListContainer() {
 
     return (
         <div>
-            <GifSearch updateSearchTermInState={setSearchTerm} runGifSearchResultFactory={gifList} />
+            <GifSearch updateSearchTerm={setSearchTerm} runGifSearch={gifList} />
             {gifList()}
         </div>
     )
