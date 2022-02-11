@@ -5,7 +5,6 @@ import GifSearch from "./GifSearch"
 function GifListContainer() {
     const [searchTerm, setSearchTerm] = useState("dog")
     const [searchResults, setSearchResults] = useState([])
-    // const [searchResults, setSearchResults] = useState(placeHolderArray)
 
     const gifList = () => {
         if (!!searchResults) {
